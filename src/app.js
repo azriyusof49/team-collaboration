@@ -29,3 +29,4 @@ async function loadNavbar() {
 
 // Load the navbar and footer after the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', loadNavbar);
+

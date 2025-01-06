@@ -1,26 +1,40 @@
 <!-- navbar.html -->
 <div class="navbar bg-accent text-white grid grid-cols-2">
   <div class="">
-    <a class="btn btn-ghost text-xl">Camp Tent Rental</a>
-    <img src="" alt="">
+    <a class="btn btn-ghost text-xl">    <img src="/public/asset/logo.png" alt="" class="w-[50px] h-[50px]">
+      Camp Tent Rental</a>
   </div>
   <div class="sm:block hidden text-right auto-cols-auto">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Catalog</a></li>
-      <li><a href="#">Reviews</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="Review.html">Reviews</a></li>
       <li>
         <details>
           <summary>Tips & Tricks</summary>
           <ul class="bg-accent rounded-t-none p-2">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
+            <li><a href="Tips2.html">Camping Tips</a></li>
+            <li><a href="tipsTricks.html">Setting Tent</a></li>
           </ul>
         </details>
       </li>
     </ul>
   </div>
   <div class="block sm:hidden menu menu-horizontal px-1 text-right">
-    <a href="#">Menu Button</a>
+    <div class="relative sm:hidden text-right">
+      <ul class="menu menu-horizontal px-1">
+        <li>
+          <details>
+            <summary><i class="fa-solid fa-bars"></i>
+            </summary>
+            <ul class="bg-accent rounded-t-none p-2 right-4 w-auto">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="Review.html">Reviews</a></li>
+              <li><a href="Tips2.html">Tips & Tricks</a></li>
+            </ul>
+          </details>
+        </li>
+    </div>
   </div>
 </div>

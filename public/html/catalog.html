@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camping Tent Rental</title>
     <link rel="stylesheet" href="/public/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="/src/items.js"></script>
   </head>
   <body>
     <!-- Placeholder for Navbar Call by js-->
@@ -30,6 +33,7 @@
               >
                 RM 29.00
               </h1>
+              <button class="bg-accent text-white p-2 sm:block hidden">Rent Now</button>
             </div>
           </div>
           <div class="min-h-[100px]">
@@ -51,98 +55,8 @@
             <span class="font-bold text-3xl border-b-4 border-primary ml-4"
               >Tent</span
             >
-            <!-- Content Items -->
-            <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max ">
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border"><!--Card-->
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="rounded-lg shadow-blue-500/60 bg-secondary p-2 m-5 shadow-2xl">
+              <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max" id="TentContainer"></div>
             </div>
           </div>
 
@@ -151,293 +65,29 @@
               >Lamp</span
             >
             <!-- Content Items -->
-            <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max ">
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border"><!--Card-->
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="rounded-lg shadow-blue-500/60 bg-secondary p-2 m-5 shadow-2xl">
+              <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max" id="LampContainer"></div>
+             </div>
+            
           </div>
           <div class="text-left p-4">
             <span class="font-bold text-3xl border-b-4 border-primary ml-4"
               >Chair</span
             >
             <!-- Content Items -->
-            <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max ">
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border"><!--Card-->
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="rounded-lg shadow-blue-500/60 bg-secondary p-2 m-5 shadow-2xl">
+              <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max" id="ChairContainer"></div>
+
+             </div>
+
           </div>
           <div class="text-left p-4">
             <span class="font-bold text-3xl border-b-4 border-primary ml-4"
               >Table</span
             >
             <!-- Content Items -->
-            <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max ">
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border"><!--Card-->
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="scroll-ml-6 snap-start shrink-0">
-                <div class="card bg-base-100 w-80  border-primary border">
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <h1 class="font-bold sm:text-3xl text-2xl">RM 29</h1>
-                      <button class="btn btn-primary rounded-t-box">Rent Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="rounded-lg shadow-blue-500/60 bg-secondary p-2 m-5 shadow-2xl">
+              <div class="overflow-x-auto snap-x snap-mandatory space-x-4 flex m-7 rounded-xl h-max" id="TableContainer"></div>
             </div>
           </div>
         </div>
@@ -448,5 +98,6 @@
 
     <!-- Load app.js -->
     <script src="/src/app.js"></script>
+    
   </body>
 </html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Tips</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/public/style.css" />
+</head>
+<body class="font-sans">
+    <!-- Navbar  as-->
+    <div id="navbar"></div>
+
+    <section class="container mx-auto mt-8 px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Camping Tips</h2>
+
+        <!-- Tip 1 -->
+        <div class="bg-white shadow-md p-6 rounded-lg flex flex-col sm:flex-row items-center sm:items-start mb-6">
+            <img src="/public/asset/tip1.jpg"  alt="Choose the Right Spot" class="w-full sm:w-48 rounded-lg mb-4 sm:mb-0 sm:mr-6">
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">Tip 1: Choose the Right Spot</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                    Always choose a flat and dry area for your campsite. Avoid low-lying areas where water can accumulate during rain.
+                </p>
+            </div>
+        </div>
+
+        <!-- Tip 2 -->
+        <div class="bg-white shadow-md p-6 rounded-lg flex flex-col sm:flex-row items-center sm:items-start mb-6">
+            <img src="/public/asset/tip2 .jpg" alt="Pack Smart" class="w-full sm:w-48 rounded-lg mb-4 sm:mb-0 sm:mr-6">
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">Tip 2: Pack Smart</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                    Pack light but don't forget essentials like a first-aid kit, a flashlight, and enough water and food for the trip.
+                </p>
+            </div>
+        </div>
+
+        <!-- Tip 3 -->
+        <div class="bg-white shadow-md p-6 rounded-lg flex flex-col sm:flex-row items-center sm:items-start mb-6">
+            <img src="/public/asset/tip3.jpg" alt="Stay Safe" class="w-full sm:w-48 rounded-lg mb-4 sm:mb-0 sm:mr-6">
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">Tip 3: Stay Safe</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                    Keep your campsite clean to avoid attracting wildlife. Always follow safety protocols when using a campfire.
+                </p>
+            </div>
+        </div>
+
+     <!-- Viral Location -->
+<div class="bg-green-100 shadow-md p-6 rounded-lg mb-6">
+    <div class="flex justify-center">
+        <img 
+            src="/public/asset/viral.jpg" 
+            alt="Viral Location" 
+            class="w-full max-w-4xl rounded-lg mb-6"
+        >
+    </div>
+    <div class="text-center">
+        <h3 class="text-2xl font-semibold text-green-800">Viral Location: Camp Lu Ying, Bukit Tinggi</h3>
+        <p class="text-sm text-gray-700 mt-2 text-justify">
+            Camp Lu Ying, set in the picturesque Bukit Tinggi in Pahang, offers a unique glamping and camping experience. Known as Camp Eagle, it is a paradise for families seeking adventure coupled with comfort.
+            Location & Environment: The campsite is situated in a scenic setting, offering breathtaking views and a tranquil atmosphere. Its accessibility and variety of camping environments, including hill scenery, enhance its appeal.
+            Facilities & Activities: From various camping zones with different pricing options to luxurious glamping, Camp Lu Ying caters to all. Modern washrooms, a natural spring water pool, and a cafe add to the experience.
+        </p>
+    </div>
+</div>
+
+
+
+        <!-- Golden Tips (Collapsible Section) -->
+        <div class="bg-yellow-500 shadow-md p-6 rounded-lg">
+            <button id="toggle-collapsible" class="flex items-center justify-between w-full text-lg font-semibold text-white">
+                Golden Tips
+                <span id="arrow" class="transform transition-transform">&#9660;</span>
+            </button>
+            <div id="collapsible-content" class="mt-4 hidden">
+                <p class="text-sm text-gray-600">
+                    Golden Tip 1: Always inform someone about your camping location and expected return time.
+                </p>
+                <p class="text-sm text-gray-600 mt-2">
+                    Golden Tip 2: Carry a multi-tool or knife – it's a lifesaver in many situations.
+                </p>
+                <p class="text-sm text-gray-600 mt-2">
+                    Golden Tip 3: Learn basic survival skills like how to start a fire and navigate using a map and compass.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="/src/app.js"></script>
+    <script src="/src/Tips2.js"></script>
+</body>
+</html>

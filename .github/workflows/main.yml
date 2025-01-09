@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Replace 'main' with your default branch if different.
+      - main  # Replace with your branch name if different
 
 jobs:
   deploy:
@@ -14,11 +14,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Step 2: Set up Node.js
+    # Step 2: Set up Node.js (if necessary)
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Adjust this version based on your project requirements
+        node-version: '16'
 
     # Step 3: Install dependencies and build
     - name: Install dependencies and build
@@ -31,4 +31,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./src  # This is the folder containing your compiled files
+        publish_dir: ./public/html  # Point to the folder containing your index.html

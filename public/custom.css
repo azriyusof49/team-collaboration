@@ -91,7 +91,7 @@ header::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("/public/asset/GettyImages-1884579105_2048.avif");
+  background-image: url("public/asset/GettyImages-1884579105_2048.avif");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

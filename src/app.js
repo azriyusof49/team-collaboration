@@ -4,8 +4,8 @@
 async function loadNavbar() {
   try {
     // Fetch the navbar and footer HTML files located in the component folder
-    const response = await fetch('/public/component/navbar.html');
-    const footerResponse = await fetch('/public/component/footer.html');
+    const response = await fetch('public/component/navbar.html');
+    const footerResponse = await fetch('public/component/footer.html');
     
     // Check if the files were fetched successfully
     if (!response.ok) {

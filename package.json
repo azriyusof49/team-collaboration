@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "work:css": "postcss ./src/style.css -o ./public/style.css",
+    "build:css": "postcss ./src/style.css -o ./public/style.css",
     "watch:css": "postcss ./src/style.css -o ./public/style.css --watch",
-    "build:css": "tailwindcss build src/style.css -o public/style.css",
     "build": "npm run build:css"
   },
   "keywords": [],

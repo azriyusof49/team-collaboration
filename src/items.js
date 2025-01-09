@@ -118,7 +118,7 @@ const TentContainer = document.getElementById("TentContainer");
 TentData.forEach((card) => {
   const cardHTML = `
     <div class="scroll-ml-6 snap-start shrink-0">
-      <div class="card bg-base-100 w-80 border-primary border">
+      <div class="card bg-base-100 w-80 ">
         <figure>
             <img src="${card.imgSrc}" alt="${card.title}" class="w-[250px] h-[250px]" />
         </figure>
@@ -141,7 +141,7 @@ const LampContainer = document.getElementById("LampContainer");
 LampData.forEach((card) => {
   const cardHTML = `
     <div class="scroll-ml-6 snap-start shrink-0">
-      <div class="card bg-base-100 w-80 border-primary border">
+      <div class="card bg-base-100 w-80 ">
         <figure>
             <img src="${card.imgSrc}" alt="${card.title}" class="w-[250px] h-[250px]" />
         </figure>
@@ -164,7 +164,7 @@ const ChairContainer = document.getElementById("ChairContainer");
 ChairData.forEach((card) => {
   const cardHTML = `
     <div class="scroll-ml-6 snap-start shrink-0">
-      <div class="card bg-base-100 w-80 border-primary border">
+      <div class="card bg-base-100 w-80 ">
         <figure>
             <img src="${card.imgSrc}" alt="${card.title}" class="w-[250px] h-[250px]" />
         </figure>
@@ -187,7 +187,7 @@ const TableContainer = document.getElementById("TableContainer");
 TableData.forEach((card) => {
   const cardHTML = `
     <div class="scroll-ml-6 snap-start shrink-0">
-      <div class="card bg-base-100 w-80 border-primary border">
+      <div class="card bg-base-100 w-80 ">
         <figure>
             <img src="${card.imgSrc}" alt="${card.title}" class="w-[250px] h-[250px]" />
         </figure>
